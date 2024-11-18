@@ -1,0 +1,119 @@
+/* style.css */
+@font-face {
+    font-family: 'CCOverbyteOff Regular';
+    src: url('ccoverbyteoff-regular.ttf');
+}
+
+.root {
+    -fx-font-family: 'CCOverbyteOff Regular';
+}
+
+.label {
+    -fx-font-family: 'CCOverbyteOff Regular';
+}
+
+.rectangle {
+    -fx-stroke: white; /* Border color for rectangles */
+    -fx-stroke-width: 2; /* Border width */
+}
+
+.button {
+    -fx-font-family: 'CCOverbyteOff Regular';
+    -fx-font-size: 18px;
+}
+
+.title-label {
+    -fx-font-family: 'CCOverbyteOff Regular';
+    -fx-font-size: 48px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, black, 10, 0.7, 0, 0);
+}
+
+.instruction-label {
+    -fx-font-family: 'CCOverbyteOff Regular';
+    -fx-font-size: 24px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, black, 5, 0.7, 0, 0);
+}
+
+.game-button {
+    -fx-background-color: linear-gradient(to bottom right, #4CAF50, #45a049);
+    -fx-text-fill: white;
+    -fx-font-family: "CCOverbyteOff Regular";
+    -fx-font-size: 18px;
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-padding: 15 30;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+    -fx-transition: all 0.3s ease;
+}
+
+.game-button:hover {
+    -fx-background-color: linear-gradient(to bottom right, #45a049, #357a38);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 15, 0, 0, 0);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.game-button:pressed {
+    -fx-background-color: linear-gradient(to bottom right, #357a38, #2d672d);
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+}
+
+.score-label {
+    -fx-font-family: 'CCOverbyteOff Regular';
+    -fx-font-size: 20px;
+    -fx-padding: 10;
+}
+
+.game-over-label {
+    -fx-font-family: 'CCOverbyteOff Regular';
+    -fx-font-size: 40px;
+    -fx-text-fill: red;
+    -fx-font-weight: bold;
+}
+
+.final-score-label {
+    -fx-font-family: 'CCOverbyteOff Regular';
+    -fx-font-size: 24px;
+    -fx-text-fill: white;
+}
+
+.game-over-box {
+    -fx-spacing: 20;
+    -fx-alignment: center;
+}
+
+.start-screen {
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 0);
+}
+
+.game-area {
+    -fx-background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Add this if you want the exit button to have a different color scheme */
+.game-button.exit {
+    -fx-background-color: linear-gradient(to bottom right, #ff4444, #cc0000);
+}
+
+.game-button.exit:hover {
+    -fx-background-color: linear-gradient(to bottom right, #cc0000, #aa0000);
+}
+
+/* Optional: If you want to add some spacing between buttons in the game over screen */
+.game-over-box > .button {
+    -fx-margin: 10px 0;
+}
+
+/* Optional: Add a text glow effect on hover */
+.title-label:hover {
+    -fx-effect: dropshadow(three-pass-box, #4CAF50, 15, 0.7, 0, 0);
+}
